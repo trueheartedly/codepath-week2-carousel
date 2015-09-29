@@ -579,26 +579,6 @@
             </objects>
             <point key="canvasLocation" x="-286" y="229"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LBY-G4-kAO">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ER6-ig-IBv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="B3T-lT-xuc"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z48-Xx-1cU">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Xal-di-1NN" kind="relationship" relationship="rootViewController" id="yh5-rL-Lrh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6uw-ft-qqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1290" y="-1143"/>
-        </scene>
     </scenes>
     <resources>
         <image name="backup_button" width="320" height="97"/>

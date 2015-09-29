@@ -49,6 +49,7 @@ class SignInViewController: UIViewController {
     @IBAction func didPressSignIn(sender: AnyObject) {
         
         if emailTextField.text == "email@domain.com" && passwordTextField.text == "password" {
+
             let alertController = UIAlertController(title: "Signing in...", message: nil, preferredStyle: .Alert)
             presentViewController(alertController, animated: true) {
                 // optional code for what happens after the alert controller has finished presenting
@@ -59,23 +60,22 @@ class SignInViewController: UIViewController {
             }
             
         } else if emailTextField.text == "" || passwordTextField.text == "" {
-            self.performSegueWithIdentifier("loginSegue", sender: nil)
-
-//            let alertController = UIAlertController(title: "Email and Password Required", message: "Please enter your email and password", preferredStyle: .Alert)
-//            
-//            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-//                // handle response here.
-//            }
-//            alertController.addAction(OKAction)
-//            presentViewController(alertController, animated: true) {
-//            }
+            let alertController = UIAlertController(title: "Email and Password Required", message: "Please enter your email and password", preferredStyle: .Alert)
+            
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // handle response here.
+            }
+            alertController.addAction(OKAction)
+            presentViewController(alertController, animated: true) {
+            }
             
         } else {
-            
+
             let alertController = UIAlertController(title: "Signing in...", message: nil, preferredStyle: .Alert)
             presentViewController(alertController, animated: true) {
             }
             delay(2) {
+
                 alertController.dismissViewControllerAnimated(false, completion: nil)
 
                 let alertController = UIAlertController(title: "Sign In Failed", message: "Incorrect email or password", preferredStyle: .Alert)
